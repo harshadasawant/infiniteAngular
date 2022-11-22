@@ -7,13 +7,15 @@ import { AdminModule } from './admin/admin.module';
 import { HeaderComponent } from './header/header.component';
 import { Comp1Component } from './comp1/comp1.component';
 import { Comp2Component } from './comp2/comp2.component';
+import { RedElDirective } from './red-el.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     Comp1Component,
-    Comp2Component
+    Comp2Component,
+    RedElDirective
   ],
   imports: [
     BrowserModule,
