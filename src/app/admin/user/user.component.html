@@ -1,4 +1,4 @@
-<p>user works!</p>
+<!-- <p>user works!</p>
 <button (click)="show = !show">{{show ? 'hide' : 'show'}}</button>
 show = {{show}}
 <br>
@@ -41,10 +41,19 @@ show = {{show}}
             <div *ngSwitchDefault>Default Option</div>
         </div>
 
-<div [ngStyle]="myStyle">Hello</div>
+        <form>
+            <input type="text" name="userName">
+              <button (click)="argsPass(userName.value)">Add Style</button> -->
+        <!-- </form> -->
+<!-- <div [ngStyle]="myStyle">Hello</div>
  <button (click)="addStyles()">Add Style</button>
 
  <div [ngClass]="myClasses">Hello</div>
-<button (click)="changeShape()">Change Shape</button>
+<button (click)="changeShape()">Change Shape</button> --> -->
+
+
+<input type="text" [(ngModel)]="name"> <br/>
+<div>Hello , {{ name }}</div>
+
 
 

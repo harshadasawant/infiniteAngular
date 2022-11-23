@@ -39,6 +39,13 @@ myClasses={
     this.myClasses.border = !this.myClasses.border;
     this.myClasses.circle = !this.myClasses.circle;
    }
+
+  argsPass(username: string){
+
+  }
+
+  name: string = "Angular";
+
 }
 
 class Movie {

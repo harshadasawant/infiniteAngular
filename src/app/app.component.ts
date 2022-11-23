@@ -8,8 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Infinite_Angular';
   courseName = "Angular";
+  colspanValue: string ="3";
   changeName() {
     this.courseName = "TypeScript";
 }
+
+isValid=true;
 
 }

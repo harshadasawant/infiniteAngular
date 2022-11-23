@@ -1,7 +1,23 @@
 <!-- <h1>Hello  {{courseName}}</h1> -->
 <app-user></app-user>
-<p appRedEl>hello</p>
-<h1 appRedEl>Hello</h1>
+<!--<p appRedEl>hello</p>
+<h1 appRedEl>Hello</h1> -->
+
+<table border=1>
+    <tr>
+        <td [attr.colspan] ="colspanValue"> First </td>
+        <td>Second</td>
+    </tr>
+    <tr>
+        <td>Third</td>
+        <td>Fourth</td>
+        <td>Fifth</td>
+    </tr>
+</table>
+
+<button [style.color] = "isValid ? 'blue' : 'red' ">Hello</button>
+
+
 
 <!-- <app-header></app-header>
 <app-comp1></app-comp1>
