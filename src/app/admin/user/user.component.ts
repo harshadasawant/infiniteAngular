@@ -41,7 +41,7 @@ myClasses={
    }
 
   argsPass(username: string){
-
+    alert(username);
   }
 
   name: string = "Angular";
