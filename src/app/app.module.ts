@@ -10,6 +10,7 @@ import { Comp2Component } from './comp2/comp2.component';
 import { RedElDirective } from './red-el.directive';
 import { FormsModule } from '@angular/forms';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
+import { CourselistComponent } from './courselist/courselist.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
     Comp1Component,
     Comp2Component,
     RedElDirective,
-    UsdInrPipe
+    UsdInrPipe,
+    CourselistComponent
   ],
   imports: [
     BrowserModule,

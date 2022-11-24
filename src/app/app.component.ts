@@ -14,5 +14,7 @@ export class AppComponent {
 }
 
 isValid=true;
+show!: boolean;
+
 
 }
