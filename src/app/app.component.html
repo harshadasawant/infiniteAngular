@@ -7,7 +7,9 @@
     }
   </style>
   <div class="highlight">Container Component</div>
-  <app-child></app-child>
+  <input type="text" [(ngModel)]="data" />
+  <app-child [title]="data"></app-child>
+
 
 <!-- <h1>Hello  {{courseName}}</h1> -->
 <!-- <app-user></app-user> -->
