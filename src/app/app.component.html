@@ -1,3 +1,14 @@
+<style>
+    .highlight {
+      border: 2px solid green;
+      background-color: aliceblue;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+  <div class="highlight">Container Component</div>
+  <app-child></app-child>
+
 <!-- <h1>Hello  {{courseName}}</h1> -->
 <!-- <app-user></app-user> -->
 <!--<p appRedEl>hello</p>
@@ -49,9 +60,9 @@
     <app-courselist></app-courselist>
 </div> -->
 
-<h2> Popular Courses </h2>
+<!-- <h2> Popular Courses </h2>
 Select a course to view
-<select #course (change)="cl.changeCourse(course.value)">
+<select #course (change)="name = course.value">>
     <option value="Node JS">Node JS</option>
     <option value="Typescript">Typescript</option>
     <option value="Angular">Angular</option>
@@ -59,4 +70,8 @@ Select a course to view
 </select>
 <br/>
 <br/>
-<app-courselist #cl="courselist"></app-courselist>
+<app-courselist [cName]="name"></app-courselist> -->
+
+<app-courselist (onRegister)="courseReg($event)"></app-courselist>
+<br/><br/>
+<div *ngIf="message">{{message}}</div>

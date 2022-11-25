@@ -15,6 +15,10 @@ export class AppComponent {
 
 isValid=true;
 show!: boolean;
-
+name! : string;
+message!: string;
+courseReg(courseName: any) {
+  this.message = `Your registration for ${courseName} is successful`;
+}
 
 }

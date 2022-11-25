@@ -1,5 +1,5 @@
 <p>courselist works!</p>
-<table border="1" *ngIf="course">
+<table border="1" *ngIf="courses.length>0">
     <thead>
       <tr>
         <th>Course ID</th>
@@ -7,9 +7,11 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let c of course">
+      <tr *ngFor="let c of courses">
         <td>{{c.courseId}}</td>
         <td>{{c.courseName}}</td>
+        <td><button (click)="register(c.courseName)">Register</button></td>
+
       </tr>
     </tbody>
   </table>
