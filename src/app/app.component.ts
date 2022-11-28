@@ -1,8 +1,9 @@
 import { Component, OnInit, DoCheck, AfterContentInit, AfterContentChecked,
   AfterViewInit, AfterViewChecked,
-  OnDestroy, ViewChild
+  OnDestroy, ViewChild, ElementRef
 } from '@angular/core';
 import { TimerComponent } from './timer/timer.component';
+import { ColorDirective } from './color.directive';
 
 @Component({
   selector: 'app-root',
@@ -41,9 +42,9 @@ data = 'Angular';
   ngAfterContentChecked(): void {
       console.log('After content checked');
   }
-  ngAfterViewInit(): void {
-      console.log('After view init');
-  }
+  // ngAfterViewInit(): void {
+  //     console.log('After view init');
+  // }
   ngAfterViewChecked(): void {
       console.log('After view checked');
   }
@@ -58,6 +59,18 @@ data = 'Angular';
   stopTimer() {
     this.timerComponent.end();
   }
+  @ViewChild('empName') empName!: ElementRef;
+  @ViewChild('empNumber') empNumber!: ElementRef;
+  ngAfterViewInit() {
+    this.empName.nativeElement.style.color = 'blue';
+    this.empNumber.nativeElement.style.color = 'red';
+  }
+
+  @ViewChild(ColorDirective) colorDirective!: ColorDirective;
+  modifyColor(color: string) {
+    this.colorDirective.modify(color);
+  }
+
 }
 
 

@@ -86,3 +86,27 @@ Timer Example :
 <button type="button" (click)="stopTimer()">End</button>
 <br />
 <app-timer></app-timer>
+
+<h3>Accessing Template variable using @ViewChild</h3>
+<div>
+    Employee Name :
+    <input type='text' #empName>
+    <br/> Employee Number :
+    <input type='text' #empNumber>
+</div>
+<br>
+
+<h3>Accessing Directive using @ViewChild</h3>
+<br />
+<br />
+@ViewChild Example :
+<div appColor>Modify Color of this Content</div>
+<br />
+<br />
+<div>
+  Modify Color :
+  <input type="radio" name="color" (click)="modifyColor('blue')" />Blue
+  <input type="radio" name="color" (click)="modifyColor('yellow')" />Yellow
+  <input type="radio" name="color" (click)="modifyColor('cyan')" />Cyan
+</div>
+

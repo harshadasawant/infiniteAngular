@@ -13,6 +13,7 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
 import { CourselistComponent } from './courselist/courselist.component';
 import { ChildComponent } from './child/child.component';
 import { TimerComponent } from './timer/timer.component';
+import { ColorDirective } from './color.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TimerComponent } from './timer/timer.component';
     UsdInrPipe,
     CourselistComponent,
     ChildComponent,
-    TimerComponent
+    TimerComponent,
+    ColorDirective
   ],
   imports: [
     BrowserModule,
