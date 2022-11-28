@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
 import { CourselistComponent } from './courselist/courselist.component';
 import { ChildComponent } from './child/child.component';
+import { TimerComponent } from './timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ChildComponent } from './child/child.component';
     RedElDirective,
     UsdInrPipe,
     CourselistComponent,
-    ChildComponent
+    ChildComponent,
+    TimerComponent
   ],
   imports: [
     BrowserModule,

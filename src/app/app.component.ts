@@ -1,7 +1,8 @@
 import { Component, OnInit, DoCheck, AfterContentInit, AfterContentChecked,
   AfterViewInit, AfterViewChecked,
-  OnDestroy
+  OnDestroy, ViewChild
 } from '@angular/core';
+import { TimerComponent } from './timer/timer.component';
 
 @Component({
   selector: 'app-root',
@@ -50,4 +51,13 @@ data = 'Angular';
       console.log('Destroy');
   }
 
+  @ViewChild(TimerComponent) timerComponent!: TimerComponent;
+  startTimer() {
+    this.timerComponent.begin();
+  }
+  stopTimer() {
+    this.timerComponent.end();
+  }
 }
+
+
